@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 x:Class="SchlagBaum.Pages.SchlagbaumPage">
+	<StackLayout>
+		<Label Text="Description"/>
+		<Editor Text="{Binding Description}"/>
+		<Label Text="Telephone number"/>		
+		<Entry Text="{Binding TelephoneNumber}" Placeholder="+79161232334"/>
+		<Label Text="Cardinal number"/>
+		<Entry Text="{Binding CardinalNumber}"/>
+		<Button Text="OPEN" x:Name="ButtonOpen" Clicked="ButtonOpen_OnClicked"/>
+		<StackLayout Orientation="Horizontal" HorizontalOptions="Fill">
+			<Button x:Name="ButtonCancel" Text="Cancel" Clicked="ButtonCancel_OnClicked" HorizontalOptions="FillAndExpand"/>
+			<Button x:Name="ButtonSave" Text="Save" Clicked="ButtonSave_OnClicked" HorizontalOptions="FillAndExpand"/>
+			<Button x:Name="ButtonDel" Text="Delete" Clicked="ButtonDel_OnClicked" HorizontalOptions="FillAndExpand"/>
+		</StackLayout>
+	</StackLayout>
+</ContentPage>

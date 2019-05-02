@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 x:Class="SchlagBaum.Pages.StartPage"
+			 Title="Schlagbaum list"
+			 >
+	<StackLayout Orientation="Vertical">
+		<Button x:Name="ButtonViewMap" Text="View Map" Clicked="ButtonViewMap_OnClicked"/>
+		<ListView x:Name="SchlagBaumView" ItemsSource="{Binding}" ItemSelected="SchlagBaumView_OnItemSelected" HasUnevenRows="True">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ViewCell Height="-1">
+						<ViewCell.View>
+							<StackLayout Orientation="Vertical">
+								<Label Text="{Binding Description}" FontSize="Medium" />
+								<Label Text="{Binding CardinalNumber}" FontSize="Medium" FontAttributes="Bold"/>
+							</StackLayout>
+						</ViewCell.View>
+					</ViewCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+		<Button x:Name="ButtonAddSchlagbaum" Text="Add" Clicked="ButtonAddSchlagbaum_OnClicked"/>
+	</StackLayout>
+</ContentPage>
