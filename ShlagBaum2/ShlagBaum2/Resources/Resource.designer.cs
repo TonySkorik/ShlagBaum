@@ -4046,6 +4046,7 @@ namespace ShlagBaum2
 			global::Xamarin.Essentials.Resource.Style.TextAppearance_Compat_Notification_Title = global::ShlagBaum2.Resource.Style.TextAppearance_Compat_Notification_Title;
 			global::Xamarin.Essentials.Resource.Style.Widget_Compat_NotificationActionContainer = global::ShlagBaum2.Resource.Style.Widget_Compat_NotificationActionContainer;
 			global::Xamarin.Essentials.Resource.Style.Widget_Compat_NotificationActionText = global::ShlagBaum2.Resource.Style.Widget_Compat_NotificationActionText;
+			global::Xamarin.Essentials.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::ShlagBaum2.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamily = global::ShlagBaum2.Resource.Styleable.FontFamily;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderAuthority = global::ShlagBaum2.Resource.Styleable.FontFamily_fontProviderAuthority;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderCerts = global::ShlagBaum2.Resource.Styleable.FontFamily_fontProviderCerts;
@@ -7275,7 +7276,10 @@ namespace ShlagBaum2
 			public const int ic_launcher_foreground = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int ic_launcher_round = 2130903042;
+			public const int ic_launcher_foreground_main = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int ic_launcher_round = 2130903043;
 			
 			static Mipmap()
 			{
@@ -8617,6 +8621,9 @@ namespace ShlagBaum2
 			
 			// aapt resource value: 0x7f070000
 			public const int Empty = 2131165184;
+			
+			// aapt resource value: 0x7f070001
+			public const int xamarin_essentials_fileprovider_file_paths = 2131165185;
 			
 			static Xml()
 			{
